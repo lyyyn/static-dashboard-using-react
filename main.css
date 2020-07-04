@@ -1,0 +1,76 @@
+* {
+    /* border: 1px solid gold; */
+}
+
+.main {
+    background: whitesmoke;
+    display: grid;
+    grid-template-columns: auto 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+    grid-template: 
+    "header header header header"
+    "sidebar widget widget widget" 
+    "sidebar visitors visitors visitors";
+    border-radius: 1vh;
+}
+
+.header {
+    grid-area: header;
+    background: seashell;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: lavender;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.sidebar>ul {
+    color: darkblue;
+    padding: 0;
+    list-style-type: none;
+}
+
+.widget {
+    background: papayawhip;
+    flex-basis: 33%;
+    font-size: 1.5rem;
+}
+
+.topWidgets {
+    grid-area: widget;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.largeFont {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    color: yellow;
+}
+
+h4 {
+    text-align: center;
+}
+
+.visitors {
+    grid-area: visitors;
+    background: lavenderblush;
+    font-size: 1.5rem;
+}
+
+.visitors-chart {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
