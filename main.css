@@ -1,76 +1,75 @@
-* {
-    /* border: 1px solid gold; */
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
-.main {
-    background: whitesmoke;
-    display: grid;
-    grid-template-columns: auto 25% 25% 25%;
-    grid-template-rows: auto;
-    grid-column-gap: 1%;
-    grid-row-gap: 1%;
-    grid-template: 
-    "header header header header"
-    "sidebar widget widget widget" 
-    "sidebar visitors visitors visitors";
-    border-radius: 1vh;
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
 }
-
-.header {
-    grid-area: header;
-    background: seashell;
-}
-
-.sidebar {
-    grid-area: sidebar;
-    background: lavender;
-    padding: 10px;
-    font-size: 1.5rem;
-}
-
-.sidebar>ul {
-    color: darkblue;
-    padding: 0;
-    list-style-type: none;
-}
-
-.widget {
-    background: papayawhip;
-    flex-basis: 33%;
-    font-size: 1.5rem;
-}
-
-.topWidgets {
-    grid-area: widget;
-    width: 100%;
+.container {
+    width: 80%;
+    height: 800px;
+    margin: auto;
+    background-color: #fafbfe;
+    border-radius: 10px;
+    padding: 2%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
 }
-
-.largeFont {
-    font-size: 2rem;
-    font-weight: 600;
+.sideBar {
+    width: 25%;
+    background-color: darkseagreen;
+    border-radius: 10px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
 }
-
-h3 {
-    color: yellow;
+a {
+    text-decoration: none;
+    color: whitesmoke;
 }
-
-h4 {
-    text-align: center;
+.content {
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
+.reviews, .ratings, .sentiments {
+    width: 30%;
+    height: 250px;
+    background-color: darkseagreen;
+    padding: 2%;
+    border-radius: 10px;
+}
+.reviews {
+    margin-right: 2%;
+}
+.ratings {
+    margin: 0 2% 0 2%;
+}
+.sentiments {
+    margin-left: 2%;
+}
+.top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
 .visitors {
-    grid-area: visitors;
-    background: lavenderblush;
-    font-size: 1.5rem;
+    background-color: darkseagreen;
+    border-radius: 10px;
+    height: 450px;
+    padding: 2%;
 }
 
-.visitors-chart {
-    width: 100%;
-    height: 200px;
-    background-color: white;
-    color: black;
+h1 {
     text-align: center;
+    color: indianred;
+}
+.chart {
+    width: 100%;
+}
+.visitors img {
+    border-radius: 10px;
 }
